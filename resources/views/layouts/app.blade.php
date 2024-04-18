@@ -36,6 +36,9 @@
 
           <link rel="icon" href="{{ asset('images/favicon.ico') }}">          
 
+        <!-- Scripts -->
+        @vite(['resources/css/app.css', 'resources/js/app.js'])          
+
     @stack('third_party_stylesheets')
 
     @stack('page_css')
@@ -101,7 +104,7 @@
     <!-- Main Footer -->
     <footer class="main-footer">
         <div class="float-right d-none d-sm-block">
-            <b>Version</b> 1.0.0
+            <b>Version</b> 0.0.0
         </div>
         <strong>HECTOR MORAN -ARGENTINA - 2024 <a href="https://www.ubik.ar">Ubik</a></strong>
         
