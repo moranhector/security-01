@@ -101,9 +101,9 @@
     <!-- Main Footer -->
     <footer class="main-footer">
         <div class="float-right d-none d-sm-block">
-            <b>Version</b> 3.1.0
+            <b>Version</b> 1.0.0
         </div>
-        <strong>Mercado Artesanal - 2022 <a href="https://www.mendoza.gov.ar/desarrollosocial/">Desarrollo Social </a>.</strong> Gobierno de Mendoza
+        <strong>HECTOR MORAN -ARGENTINA - 2024 <a href="https://www.ubik.ar">Ubik</a></strong>
         
     </footer>
 </div>

@@ -14,7 +14,7 @@ class RoleSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        
 
         $role1 = Role::create(['name' => 'Admin']);
         $role2 = Role::create(['name' => 'Gerente']);
@@ -25,26 +25,13 @@ class RoleSeeder extends Seeder
         Permission::create(['name' => 'usuarios-editar'])->syncRoles([$role1, $role2 ]);
         Permission::create(['name' => 'usuarios-borrar'])->syncRoles([$role1 ]);
         Permission::create(['name' => 'usuarios-ver'])->syncRoles([$role1, $role2, $role3]);
+
+
+        Permission::create(['name' => 'roles-crear'])->syncRoles([$role1 ]);
+        Permission::create(['name' => 'roles-editar'])->syncRoles([$role1 ]);
+        Permission::create(['name' => 'roles-borrar'])->syncRoles([$role1 ]);
+        Permission::create(['name' => 'roles-ver'])->syncRoles([$role1, $role2 ]);        
  
- 
-
-        // Permission::create(['name' => 'admin.home'])->syncRoles([$role1, $role2, $role3]);
-        // Permission::create(['name' => 'admin.categories.index'])->syncRoles([$role1, $role2, $role3]);
-        // Permission::create(['name' => 'admin.categories.create'])->syncRoles([$role1, $role2, $role3]);
-        // Permission::create(['name' => 'admin.categories.edit'])->syncRoles([$role1, $role2, $role3]);
-        // Permission::create(['name' => 'admin.categories.destroy'])->syncRoles([$role1, $role2, $role3]);
-
-        // Permission::create(['name' => 'admin.tags.index'])->syncRoles([$role1, $role2, $role3]);
-        // Permission::create(['name' => 'admin.tags.create'])->syncRoles([$role1, $role2, $role3]);
-        // Permission::create(['name' => 'admin.tags.edit'])->syncRoles([$role1, $role2, $role3]);
-        // Permission::create(['name' => 'admin.tags.destroy'])->syncRoles([$role1, $role2, $role3]);
-
-
-        // Permission::create(['name' => 'admin.posts.index'])->syncRoles([$role1, $role2, $role3]);
-        // Permission::create(['name' => 'admin.posts.create'])->syncRoles([$role1, $role2, $role3]);
-        // Permission::create(['name' => 'admin.posts.edit'])->syncRoles([$role1, $role2, $role3]);
-        // Permission::create(['name' => 'admin.posts.destroy'])->syncRoles([$role1, $role2, $role3]);
-
 
 
     }
